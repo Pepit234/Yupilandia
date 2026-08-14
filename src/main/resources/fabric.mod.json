@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "survivalclient",
+	"version": "${version}",
+	"name": "Survival Client",
+	"description": "Mod de supervivencia legítima para Minecraft Java 1.21.8. HUD, waypoints, información de inventario y herramientas útiles sin cheats.",
+	"authors": [
+		"SurvivalClient Team"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.survivalclient.core.SurvivalClient"
+		]
+	},
+	"mixins": [
+		"survivalclient.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "\~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
